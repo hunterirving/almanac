@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Almanac</title>
+<meta name="theme-color" content="#3c7a3a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Almanac">
+<link rel="icon" href="resources/almanac_icon.png">
+<link rel="apple-touch-icon" href="resources/almanac_icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="resources/styles.css">
+<style>
+	/* kill iOS tap highlight, text selection, and double-tap zoom app-wide */
+	html {
+		-webkit-tap-highlight-color: transparent;
+		-webkit-user-select: none;
+		user-select: none;
+		touch-action: manipulation;
+	}
+	*, *::before, *::after {
+		-webkit-user-select: none;
+		user-select: none;
+	}
+</style>
+</head>
+<body>
+<div class="wrap">
+	<!-- Collapsible villager panel: stays a thin bar until opened, so toggling
+	     birthdays never pushes the list around -->
+	<section class="villagers-panel">
+		<button class="villagers-toggle" id="villagers-toggle" aria-expanded="false" aria-controls="villagers-drawer">
+			<span class="vt-label">Your villagers</span>
+			<span class="vt-right"><span class="picker-count" id="picker-count">0/15</span><span class="plus-box" aria-hidden="true"><span class="plus"></span></span></span>
+		</button>
+		<div class="villagers-drawer" id="villagers-drawer">
+			<div class="drawer-inner">
+				<p class="blurb">Select up to 15 villagers to add their birthdays to the calendar.</p>
+				<div class="results-wrap">
+					<div class="results" id="results"></div>
+				</div>
+				<div class="search-row">
+					<input type="text" id="search" placeholder="Search by name or species…" autocomplete="off" aria-label="Search villagers">
+				</div>
+				<div class="chosen" id="chosen"></div>
+			</div>
+		</div>
+	</section>
+
+	<div class="sec-head">
+		<h3>Coming up</h3>
+		<span class="rule"></span>
+	</div>
+	<ul class="events" id="list"></ul>
+</div>
+
+<script src="resources/script.js"></script>
+<script>
+	// block pinch zoom (iOS ignores user-scalable=no in Safari)
+	document.addEventListener('gesturestart', e => e.preventDefault());
+	document.addEventListener('gesturechange', e => e.preventDefault());
+	document.addEventListener('gestureend', e => e.preventDefault());
+
+	// block double-tap zoom fallback for browsers that ignore touch-action —
+	// only on non-interactive surfaces, so deliberate double-taps on controls
+	// (and rapid taps on different villager rows) still register
+	let lastTouch = 0;
+	document.addEventListener('touchend', e => {
+		const now = Date.now();
+		const interactive = e.target.closest('a, button, input, [role="button"]');
+		if (now - lastTouch <= 300 && !interactive) e.preventDefault();
+		lastTouch = now;
+	}, { passive: false });
+</script>
+</body>
+</html>

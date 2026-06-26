@@ -1,0 +1,19 @@
+{
+	"id": "./",
+	"name": "Almanac",
+	"short_name": "Almanac",
+	"description": "A companion app for the first Animal Crossing game.",
+	"start_url": ".",
+	"scope": ".",
+	"display": "standalone",
+	"background_color": "#8fd4e8",
+	"theme_color": "#3c7a3a",
+	"icons": [
+		{
+			"src": "resources/almanac_icon.png",
+			"sizes": "1280x1280",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}

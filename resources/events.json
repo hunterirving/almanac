@@ -1,0 +1,311 @@
+[
+	{
+		"name": "New Year's Day",
+		"note": "January 1",
+		"time": { "start": "06:00", "end": "23:00" },
+		"desc": "Tortimer wishes you a happy new year and hands over a random diary.",
+		"date": { "type": "fixed", "month": 1, "day": 1 }
+	},
+	{
+		"name": "Igloo Campers",
+		"note": "January 2 – February 23",
+		"time": { "start": "10:00", "end": "22:00" },
+		"desc": "A camper sets up an igloo in town through winter. Visit to chat, play a matching game, and you may be able to invite them to move in.",
+		"date": { "type": "range", "startMonth": 1, "startDay": 2, "endMonth": 2, "endDay": 23 }
+	},
+	{
+		"name": "Tortimer's Lighthouse Request",
+		"note": "January 15–24",
+		"time": { "start": "18:00", "end": "22:00" },
+		"desc": "Tortimer heads off on vacation and asks you to light the lighthouse each night between 6 and 10 PM for a week. Do it every night and he returns with a lighthouse model.",
+		"date": { "type": "range", "startMonth": 1, "startDay": 15, "endMonth": 1, "endDay": 24 }
+	},
+	{
+		"name": "Groundhog Day",
+		"note": "February 2",
+		"time": { "start": "07:00", "end": "09:00" },
+		"desc": "Villagers gather at the wishing well awaiting Resetti, then Tortimer gives a flower model.",
+		"date": { "type": "fixed", "month": 2, "day": 2 }
+	},
+	{
+		"name": "Tortimer's Lighthouse Request",
+		"note": "February 12–21",
+		"time": { "start": "18:00", "end": "22:00" },
+		"desc": "Tortimer takes a second vacation and again asks you to light the lighthouse nightly for a week. Keep it lit every night and he rewards you with chocolates.",
+		"date": { "type": "range", "startMonth": 2, "startDay": 12, "endMonth": 2, "endDay": 21 }
+	},
+	{
+		"name": "Valentine's Day",
+		"note": "February 14",
+		"time": { "start": "10:00", "end": "21:00" },
+		"desc": "Villagers send letters with gifts to your mailbox.",
+		"date": { "type": "fixed", "month": 2, "day": 14 }
+	},
+	{
+		"name": "Spring Sports Fair: Aerobics",
+		"note": "Spring equinox",
+		"time": { "start": "09:00", "end": "11:00" },
+		"desc": "The Sports Fair opens with morning aerobics by the wishing well. Take part in any event to earn Tortimer's spring medal.",
+		"date": { "type": "equinox", "which": "spring" }
+	},
+	{
+		"name": "Spring Sports Fair: Footrace",
+		"note": "Spring equinox",
+		"time": { "start": "11:00", "end": "13:00" },
+		"desc": "The late-morning footrace around the wishing well. Take part in any event to earn Tortimer's spring medal.",
+		"date": { "type": "equinox", "which": "spring" }
+	},
+	{
+		"name": "Spring Sports Fair: Ball Toss",
+		"note": "Spring equinox",
+		"time": { "start": "13:00", "end": "15:00" },
+		"desc": "The afternoon ball-toss contest at the wishing well. Take part in any event to earn Tortimer's spring medal.",
+		"date": { "type": "equinox", "which": "spring" }
+	},
+	{
+		"name": "Spring Sports Fair: Tug-o'-War",
+		"note": "Spring equinox",
+		"time": { "start": "15:00", "end": "17:00" },
+		"desc": "The day closes with tug-o'-war by the wishing well. Take part in any event to earn Tortimer's spring medal.",
+		"date": { "type": "equinox", "which": "spring" }
+	},
+	{
+		"name": "April Fools' Day",
+		"note": "April 1",
+		"time": { "allDay": true },
+		"desc": "Special characters prank you. Tortimer gives the joke game Super Tortimer.",
+		"date": { "type": "fixed", "month": 4, "day": 1 }
+	},
+	{
+		"name": "Cherry Blossom Festival",
+		"note": "April 5–7",
+		"time": { "start": "10:00", "end": "22:00" },
+		"desc": "Every fruit tree blooms pink. Tortimer gives a pink tree model.",
+		"date": { "type": "range", "startMonth": 4, "startDay": 5, "endMonth": 4, "endDay": 7 }
+	},
+	{
+		"name": "Nature Day",
+		"note": "April 22",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Tortimer shares nature advice and gives a tree model.",
+		"date": { "type": "fixed", "month": 4, "day": 22 }
+	},
+	{
+		"name": "Spring Cleaning Day",
+		"note": "May 1",
+		"time": { "allDay": true },
+		"desc": "Villagers ask if you've been tidying. Tortimer gives a dump model.",
+		"date": { "type": "fixed", "month": 5, "day": 1 }
+	},
+	{
+		"name": "Mother's Day",
+		"note": "2nd Sunday of May",
+		"time": { "allDay": true },
+		"desc": "Tortimer gives a lovely phone near the wishing well.",
+		"date": { "type": "nthWeekday", "month": 5, "weekday": 0, "n": 2 }
+	},
+	{
+		"name": "Graduation Day",
+		"note": "2nd Friday of June",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Tortimer presents the Tailor Model for your hard work.",
+		"date": { "type": "nthWeekday", "month": 6, "weekday": 5, "n": 2 }
+	},
+	{
+		"name": "Father's Day",
+		"note": "3rd Sunday of June",
+		"time": { "allDay": true },
+		"desc": "Dad writes a letter; Tortimer gives a locomotive model.",
+		"date": { "type": "nthWeekday", "month": 6, "weekday": 0, "n": 3 }
+	},
+	{
+		"name": "Fishing Tourney",
+		"note": "Every Sunday in June",
+		"time": { "start": "06:00", "end": "18:00" },
+		"desc": "Chip hosts a bass-only fishing competition; top catch wins a fishing trophy.",
+		"date": { "type": "weeklyInMonth", "month": 6, "weekday": 0 }
+	},
+	{
+		"name": "Hometown Day",
+		"note": "A day in July",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Your town's anniversary, set to a random date when your save file was created. Tortimer gives a train station model matching your station.",
+		"date": { "type": "randomInMonth", "month": 7 }
+	},
+	{
+		"name": "Fireworks Show",
+		"note": "July 4",
+		"time": { "start": "19:00", "end": "21:00" },
+		"desc": "Tortimer roams a random acre and gives a decorative bottle rocket.",
+		"date": { "type": "fixed", "month": 7, "day": 4 }
+	},
+	{
+		"name": "Tent Campers",
+		"note": "Weekends, June–August",
+		"time": { "start": "09:00", "startDay": "Sat", "end": "15:00", "endDay": "Sun" },
+		"weekendsOnly": true,
+		"desc": "On summer weekends a camper pitches a tent in town. Visit to chat and you may be able to invite them to move in.",
+		"date": { "type": "range", "startMonth": 6, "startDay": 1, "endMonth": 8, "endDay": 31 }
+	},
+	{
+		"name": "Group Stretching",
+		"note": "July 25 – August 31",
+		"time": { "start": "06:00", "end": "07:00" },
+		"desc": "Copper leads morning aerobics at the wishing well.",
+		"date": { "type": "range", "startMonth": 7, "startDay": 25, "endMonth": 8, "endDay": 31 }
+	},
+	{
+		"name": "Meteor Shower",
+		"note": "August 12",
+		"time": { "start": "18:00", "end": "21:00" },
+		"desc": "Watch meteors reflected in the lake; Tortimer gives a telescope.",
+		"date": { "type": "fixed", "month": 8, "day": 12 }
+	},
+	{
+		"name": "Founder's Day",
+		"note": "August 21",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Tortimer tells the town's founding story and gives a weed model.",
+		"date": { "type": "fixed", "month": 8, "day": 21 }
+	},
+	{
+		"name": "Labor Day",
+		"note": "1st Monday of September",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Tortimer gives a shop model at the wishing well.",
+		"date": { "type": "nthWeekday", "month": 9, "weekday": 1, "n": 1 }
+	},
+	{
+		"name": "Autumn Moon",
+		"note": "Mid-Autumn full moon",
+		"time": { "start": "18:00", "end": "21:00" },
+		"desc": "View the moon's reflection in the lake; Tortimer gives the moon furniture item.",
+		"date": { "type": "autumnMoon" }
+	},
+	{
+		"name": "Fall Sports Fair: Aerobics",
+		"note": "Autumn equinox",
+		"time": { "start": "09:00", "end": "11:00" },
+		"desc": "The autumn Sports Fair opens with morning aerobics by the wishing well. Take part in any event to earn Tortimer's autumn medal.",
+		"date": { "type": "equinox", "which": "autumn" }
+	},
+	{
+		"name": "Fall Sports Fair: Footrace",
+		"note": "Autumn equinox",
+		"time": { "start": "11:00", "end": "13:00" },
+		"desc": "The late-morning footrace around the wishing well. Take part in any event to earn Tortimer's autumn medal.",
+		"date": { "type": "equinox", "which": "autumn" }
+	},
+	{
+		"name": "Fall Sports Fair: Ball Toss",
+		"note": "Autumn equinox",
+		"time": { "start": "13:00", "end": "15:00" },
+		"desc": "The afternoon ball-toss contest at the wishing well. Take part in any event to earn Tortimer's autumn medal.",
+		"date": { "type": "equinox", "which": "autumn" }
+	},
+	{
+		"name": "Fall Sports Fair: Tug-o'-War",
+		"note": "Autumn equinox",
+		"time": { "start": "15:00", "end": "17:00" },
+		"desc": "The day closes with tug-o'-war by the wishing well. Take part in any event to earn Tortimer's autumn medal.",
+		"date": { "type": "equinox", "which": "autumn" }
+	},
+	{
+		"name": "Explorer's Day",
+		"note": "2nd Monday of October",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Find Tortimer outside town hall for a bottled ship.",
+		"date": { "type": "nthWeekday", "month": 10, "weekday": 1, "n": 2 }
+	},
+	{
+		"name": "Mushrooming Season",
+		"note": "October 15–25",
+		"time": { "start": "08:00", "end": "09:15" },
+		"desc": "Five mushrooms appear near random trees around town each morning. One mushroom disappears every 15 minutes, meaning all mushrooms will disappear by 9:00 AM.",
+		"date": { "type": "range", "startMonth": 10, "startDay": 15, "endMonth": 10, "endDay": 25 }
+	},
+	{
+		"name": "Halloween",
+		"note": "October 31",
+		"time": { "start": "18:00", "end": "01:00" },
+		"desc": "Tortimer dresses as Jack, who roams a random acre looking for candy.",
+		"date": { "type": "fixed", "month": 10, "day": 31 }
+	},
+	{
+		"name": "Mayor's Day",
+		"note": "Day after the 1st Monday of November",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Tortimer gives a Well Model at the wishing well.",
+		"date": { "type": "dayAfterFirstMonday", "month": 11 }
+	},
+	{
+		"name": "Officer's Day",
+		"note": "November 11",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "The town honors Booker and Copper; Tortimer gives a police model.",
+		"date": { "type": "fixed", "month": 11, "day": 11 }
+	},
+	{
+		"name": "Fishing Tourney",
+		"note": "Every Sunday in November",
+		"time": { "start": "06:00", "end": "18:00" },
+		"desc": "Chip hosts a bass-only fishing competition; top catch wins a fishing trophy.",
+		"date": { "type": "weeklyInMonth", "month": 11, "weekday": 0 }
+	},
+	{
+		"name": "Harvest Festival",
+		"note": "4th Thursday of November",
+		"time": { "start": "15:00", "end": "21:00" },
+		"desc": "Three tables of food at the well; Tortimer gives a cornucopia.",
+		"date": { "type": "nthWeekday", "month": 11, "weekday": 4, "n": 4 }
+	},
+	{
+		"name": "Sale Day",
+		"note": "Day after Harvest Festival",
+		"time": { "text": "Nook's shop hours" },
+		"desc": "Nook sells Grab Bags and Redd appears; Tortimer gives a market model.",
+		"date": { "type": "dayAfterNthWeekday", "month": 11, "weekday": 4, "n": 4 }
+	},
+	{
+		"name": "Snow Day",
+		"note": "December 1",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Tortimer marks the start of winter with a Snowman furniture item.",
+		"date": { "type": "fixed", "month": 12, "day": 1 }
+	},
+	{
+		"name": "Toy Day",
+		"note": "December 23",
+		"time": { "start": "10:00", "end": "18:00" },
+		"desc": "Tortimer hands out a present at the wishing well — a miniature car for boys, a doll for girls.",
+		"date": { "type": "fixed", "month": 12, "day": 23 }
+	},
+	{
+		"name": "Jingle Comes to Town",
+		"note": "December 24",
+		"time": { "start": "20:00", "end": "01:00" },
+		"desc": "Jingle the reindeer roams town on Christmas Eve. Talk to him to receive furniture from the Jingle series.",
+		"date": { "type": "fixed", "month": 12, "day": 24 }
+	},
+	{
+		"name": "Countdown",
+		"note": "December 31",
+		"time": { "start": "23:00", "end": "01:00" },
+		"desc": "Villagers gather at the pond; Tortimer gives a noisemaker before midnight.",
+		"date": { "type": "fixed", "month": 12, "day": 31 }
+	},
+	{
+		"name": "K.K. Slider Visits",
+		"note": "Every Saturday",
+		"time": { "start": "20:00", "end": "00:00" },
+		"desc": "K.K. Slider performs outside the train station on Saturday nights. Request a song to receive a bootleg recording you can play at home.",
+		"date": { "type": "weekly", "weekday": 6 }
+	},
+	{
+		"name": "Raffle",
+		"note": "Last day of every month",
+		"time": { "start": "10:00", "end": "22:00" },
+		"desc": "Exchange five of the month's raffle tickets at Tom Nook's store for a chance to win one of three prizes.",
+		"date": { "type": "lastDayOfMonth" }
+	}
+]

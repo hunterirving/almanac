@@ -1,5 +1,5 @@
 // Service worker for the Town Almanac PWA — cache-first with network fallback.
-const CACHE_NAME = "almanac-v7";
+const CACHE_NAME = "almanac-v8";
 
 // Base path the SW is served from, so it works whether the app is hosted at the
 // domain root or in a subfolder.

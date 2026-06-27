@@ -140,15 +140,6 @@
 		font-family: var(--display); font-weight: 600;
 		font-size: 1rem; color: var(--ink-soft); white-space: nowrap; text-align: right;
 	}
-	.event .today-chip {
-		display: inline-block; vertical-align: middle; position: relative; top: -1px;
-		font-family: var(--display); font-weight: 600;
-		font-size: 0.64rem; letter-spacing: 0.08em; text-transform: uppercase;
-		color: var(--grass-shadow); background: var(--leaf-tag);
-		padding: 2px 9px; border-radius: 999px; box-shadow: 0 2px 0 var(--grass-deep);
-	}
-	.event.birthday .today-chip { color: #8a3a55; background: #f6c0d2; box-shadow: 0 2px 0 #d96d92; }
-
 	.villagers-panel {
 		background: var(--cream); border: 2.5px solid var(--cream-edge); border-radius: 16px;
 		box-shadow: 0 4px 0 var(--cream-edge), 0 6px 14px rgba(74,53,32,0.1);

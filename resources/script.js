@@ -213,7 +213,7 @@ function isActiveToday(ev, today) {
 	return true;
 }
 
-// Relative label for an event that is NOT active today (chip handles "today").
+// Relative label for an event that is NOT active today.
 function awayFor(ev, today) {
 	if (ev.unknownDay) {
 		const sameMonth = ev.start.getFullYear() === today.getFullYear() && ev.start.getMonth() === today.getMonth();
@@ -362,13 +362,6 @@ function render() {
 		const nameDiv = document.createElement("div");
 		nameDiv.className = "name";
 		nameDiv.textContent = ev.name + (ev.kind === "birthday" ? " \uD83C\uDF82" : "");
-		if (active) {
-			const todayChip = document.createElement("span");
-			todayChip.className = "today-chip";
-			todayChip.textContent = "Today";
-			nameDiv.appendChild(document.createTextNode(" "));
-			nameDiv.appendChild(todayChip);
-		}
 		mid.appendChild(nameDiv);
 		const timeStr = formatTime(ev.time);
 		if (ev.note || timeStr) {
@@ -383,7 +376,7 @@ function render() {
 
 		const away = document.createElement("div");
 		away.className = "away";
-		away.textContent = active ? "" : awayFor(ev, today);
+		away.textContent = active ? "Today" : awayFor(ev, today);
 
 		head.appendChild(chip); head.appendChild(mid); head.appendChild(away);
 
